@@ -1,0 +1,9 @@
+langchain 
+huggingface_hub 
+tiktoken 
+duckduckgo-search
+chromadb
+PyPDF2 
+pypdf 
+sentence_transformers
+openai
