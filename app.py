@@ -41,32 +41,33 @@ os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
 
 @st.cache_resource
 def create_embeddings():
-    with os.scandir("pdf2") as it:
-        if not any(it):
-            print('directory empty')
-            loader = DirectoryLoader('pdf',
-                                glob="./*.pdf",
-                                loader_cls=PyPDFLoader)
+    # with os.scandir("pdf2") as it:
+    folder = os.listdir("pdf")
+    if len(folder) == 1:
+        print('directory has only pdf')
+        loader = DirectoryLoader('pdf',
+                            glob="./*.pdf",
+                            loader_cls=PyPDFLoader)
 
-            documents = loader.load()
-            print(len(documents))
+        documents = loader.load()
+        print(len(documents))
 
-            #splitting the text into
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=80, separators=["\\n\\n"])
-            texts = text_splitter.split_documents(documents)
-            persist_directory = 'pdf2'
-            # clean the directory before saving the embeddings to make sure no data from earlier is there
-            # !rm -rf /content/drive/MyDrive/KG creation/Medical /Last Lap 2023-24/data and other excels/chroma dbs/disease-BGE_db6
+        #splitting the text into
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=80, separators=["\\n\\n"])
+        texts = text_splitter.split_documents(documents)
+        persist_directory = 'pdf'
+        # clean the directory before saving the embeddings to make sure no data from earlier is there
+        # !rm -rf /content/drive/MyDrive/KG creation/Medical /Last Lap 2023-24/data and other excels/chroma dbs/disease-BGE_db6
 
-            ## Here is the new embeddings being used
-            # embedding = model_norm
-            embedding = OpenAIEmbeddings()
-            vectordb = Chroma.from_documents(documents=texts,
-                                            embedding=embedding,
-                                            persist_directory=persist_directory)
-            vectordb.persist()
-        else:
-            pass
+        ## Here is the new embeddings being used
+        # embedding = model_norm
+        embedding = OpenAIEmbeddings()
+        vectordb = Chroma.from_documents(documents=texts,
+                                        embedding=embedding,
+                                        persist_directory=persist_directory)
+        vectordb.persist()
+    else:
+        pass
 
 
 # Create a connection to the database
@@ -177,7 +178,7 @@ def app():
 
             os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
             # loading the vectordb later on for future use
-            PERSIST_DIRECTORY = 'pdf2'#'disease-openaidb12'
+            PERSIST_DIRECTORY = 'pdf'#'disease-openaidb12'
 
             @st.cache_resource
             def get_embeddings():
