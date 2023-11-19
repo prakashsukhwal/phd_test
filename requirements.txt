@@ -7,5 +7,4 @@ PyPDF2
 pypdf 
 sentence_transformers
 openai
-opencv-python
-libgl1
+opencv-python-headless
