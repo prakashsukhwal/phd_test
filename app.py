@@ -40,7 +40,7 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 im = Image.open("guru1.png")
 st.set_page_config(page_title="DiseaseGuru", page_icon=im)
-os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
+os.environ["OPENAI_API_KEY"] = "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"
 
 @st.cache_resource
 def create_embeddings():
