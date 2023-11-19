@@ -8,3 +8,4 @@ pypdf
 sentence_transformers
 openai
 opencv-python
+libgl1-mesa-glx
