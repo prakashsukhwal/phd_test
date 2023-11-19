@@ -179,7 +179,7 @@ def app():
 
             # start the chat        
 
-            os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
+            os.environ["OPENAI_API_KEY"] = st.secrets["slit_key"]
             # loading the vectordb later on for future use
             PERSIST_DIRECTORY = 'pdf'#'disease-openaidb12'
 
@@ -320,7 +320,7 @@ def app():
             agent_executor = AgentExecutor(agent=llm_agent(), 
                                         tools=tools, 
                                         memory=memory, 
-                                        verbose=True,
+                                        verbose=False,
                                         return_intermediate_steps=True)
             c.execute("SELECT * FROM users WHERE username=?", (st.session_state['username'],))
             user = c.fetchone()
