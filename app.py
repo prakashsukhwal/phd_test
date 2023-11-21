@@ -34,13 +34,14 @@ from langchain.memory.chat_message_histories import StreamlitChatMessageHistory
 from langchain.document_loaders import PyPDFLoader
 from langchain.document_loaders import DirectoryLoader
 
-__import__('pysqlite3')
-import sys
+# __import__('pysqlite3')
+# import sys
 
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 im = Image.open("guru1.png")
 st.set_page_config(page_title="DiseaseGuru", page_icon=im)
-os.environ["OPENAI_API_KEY"] = st.secrets["slit_key"]
+os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
 
 @st.cache_resource
 def create_embeddings():
@@ -114,6 +115,7 @@ def registration():
 # Login page
 def login():
     st.header('Login')
+
     username = st.text_input('Username', key='111')
     password = st.text_input('Password', type='password', key='222')
     if st.button('Login'):
@@ -146,7 +148,7 @@ def logout():
     st.success('Logout successful.')
     st.session_state.steps = {}
     
-    
+
 
 def app():
     # im = Image.open("guru1.png")
@@ -168,7 +170,20 @@ def app():
     menu = ['Home', 'Registration', 'Login', 'User Details']
     choice = st.sidebar.selectbox('Select a page', menu)
     if choice == 'Home':
-        st.write('Welcome to the User Registration and Login App!')
+        # st.write('Welcome to the User Registration and Login App!')
+        st.markdown("""
+        This website is an experimental platform capable of personalized responses regarding chronic diseases. 
+        To begin, please follow the steps below:
+        """)
+        
+        st.subheader("Registration Process:")
+        st.write("""
+        Please complete the registration process to access the conversational agent. Follow these steps:
+        - Go to the menu on the left and select 'Registration'
+        - Enter a username in the provided field along with other details needed.
+        - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
+        - Click the 'Register' button to complete the registration process.
+        """)        
     elif choice == 'Registration':
         registration()
     elif choice == 'Login':
@@ -179,7 +194,7 @@ def app():
 
             # start the chat        
 
-            # os.environ["OPENAI_API_KEY"] = st.secrets["slit_key"]
+            os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
             # loading the vectordb later on for future use
             PERSIST_DIRECTORY = 'pdf'#'disease-openaidb12'
 
@@ -259,7 +274,7 @@ def app():
                 user_name = user[0]
                 # user_profile = f'{user_name}, {user_age} yrs old {user_gender} with { " ".join(str(i) for i in preconditions)} '
                 user_profile = f'{user[0]}, {user[3]} yrs old {user[2]} with {user[4]} '
-                # print(user_profile)
+                print(user_profile)
 
                 system_message = SystemMessage(
                         content=( f'''You are DiseaseGuru, an AI agent, talking to me (the user), {user_profile} "
@@ -275,7 +290,10 @@ def app():
             "Here are some sample conversations between the Assistant and a User:
 
             User: Who am i?
-            Assistant: you are Amit
+            Assistant: you are {user_name}
+            
+            User: describe me?
+            Assistant: You are a {user_profile}.
 
             User: Hey?
             Assistant: Hello Amit, What questions do you have today?
@@ -320,7 +338,7 @@ def app():
             agent_executor = AgentExecutor(agent=llm_agent(), 
                                         tools=tools, 
                                         memory=memory, 
-                                        verbose=False,
+                                        verbose=True,
                                         return_intermediate_steps=True)
             c.execute("SELECT * FROM users WHERE username=?", (st.session_state['username'],))
             user = c.fetchone()
@@ -356,8 +374,8 @@ def app():
                 st.session_state['username'] = None
                 st.success('Logout successful.')
                 
-                msgs.clear()
-                st.session_state.clear()
+                # msgs.clear()
+                # st.session_state.clear()
         else:
             st.warning('Please login to view user details.')
 
