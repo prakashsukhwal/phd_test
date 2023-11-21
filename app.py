@@ -39,7 +39,7 @@ import sys
 
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 im = Image.open("guru1.png")
-st.set_page_config(page_title="DiseaseGuru", page_icon=im)
+st.set_page_config(page_title="DiseaseGuru", page_icon=im, layout="wide")
 os.environ["OPENAI_API_KEY"] = st.secrets["my_key"]
 
 @st.cache_resource
