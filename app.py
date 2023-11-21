@@ -288,7 +288,7 @@ def app():
             "Here are some sample conversations between the Assistant and some user:
 
             User: Who am i?
-            Assistant: you are {user_profile}.
+            Assistant: you are Amit.
 
             User: Hey?
             Assistant: Hello, What questions do you have today?
