@@ -168,7 +168,20 @@ def app():
     menu = ['Home', 'Registration', 'Login', 'User Details']
     choice = st.sidebar.selectbox('Select a page', menu)
     if choice == 'Home':
-        st.write('Welcome to the User Registration and Login App!')
+        # st.write('Welcome to the User Registration and Login App!')
+        st.markdown("""
+        This website is an experimental platform capable of personalized responses regarding chronic diseases. 
+        To begin, please follow the steps below:
+        """)
+        
+        st.subheader("Registration Process:")
+        st.write("""
+        Please complete the registration process to access the conversational agent. Follow these steps:
+        - Go to the menu on the left and select 'Registration'
+        - Enter a username in the provided field along with other details needed.
+        - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
+        - Click the 'Register' button to complete the registration process.
+        """)
     elif choice == 'Registration':
         registration()
     elif choice == 'Login':
@@ -275,10 +288,10 @@ def app():
             "Here are some sample conversations between the Assistant and some user:
 
             User: Who am i?
-            Assistant: you are Amit. You are 50 yrs old with medical conditions diabetes, asthma.
+            Assistant: you are {user_profile}.
 
             User: Hey?
-            Assistant: Hello Amit, What questions do you have today?
+            Assistant: Hello, What questions do you have today?
                      
             User: Who is prone to menstrual cramps?
             Assistant: females, but you are a male so you ar not prone to it.
