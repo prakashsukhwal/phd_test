@@ -194,7 +194,7 @@ def app():
 
             # start the chat        
 
-            os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
+            os.environ["OPENAI_API_KEY"] = st.secrets["my_key"]
             # loading the vectordb later on for future use
             PERSIST_DIRECTORY = 'pdf'#'disease-openaidb12'
 
