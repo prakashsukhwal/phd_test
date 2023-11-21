@@ -1,3 +1,8 @@
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 import sqlite3
 import openai
@@ -34,10 +39,10 @@ from langchain.memory.chat_message_histories import StreamlitChatMessageHistory
 from langchain.document_loaders import PyPDFLoader
 from langchain.document_loaders import DirectoryLoader
 
-__import__('pysqlite3')
-import sys
+# __import__('pysqlite3')
+# import sys
 
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 im = Image.open("guru1.png")
 st.set_page_config(page_title="DiseaseGuru", page_icon=im, layout="wide")
 os.environ["OPENAI_API_KEY"] = st.secrets["my_key"]
