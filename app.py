@@ -175,8 +175,8 @@ def app():
     if choice == 'Home':
         # st.write('Welcome to the User Registration and Login App!')
         st.markdown("""
-        This website is an experimental platform capable of personalized responses regarding chronic diseases. 
-        To begin, please follow the steps below:
+        This website is an experimental platform capable of personalized responses regarding chronic diseases. It does not intend to replace a real medical practitioner.
+        To begin using, please follow the steps below:
         """)
         
         st.subheader("Registration Process:")
@@ -186,6 +186,7 @@ def app():
         - Enter a username in the provided field along with other details needed.
         - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
         - Click the 'Register' button to complete the registration process.
+        - The agent is experimental and sometime might take time to understand your question. In case of confusion, please re-iterate your query to the agent.
         """)
     elif choice == 'Registration':
         registration()
