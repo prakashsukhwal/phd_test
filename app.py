@@ -374,8 +374,8 @@ def app():
                 st.session_state['username'] = None
                 st.success('Logout successful.')
                 
-                # msgs.clear()
-                # st.session_state.clear()
+                msgs.clear()
+                st.session_state.clear()
         else:
             st.warning('Please login to view user details.')
 
