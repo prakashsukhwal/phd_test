@@ -41,7 +41,7 @@ from langchain.document_loaders import DirectoryLoader
 
 im = Image.open("guru1.png")
 st.set_page_config(page_title="DiseaseGuru", page_icon=im)
-os.environ["OPENAI_API_KEY"] = keys.OPENAI_API_KEY
+os.environ["OPENAI_API_KEY"] = st.secrets["slit_key"]
 
 @st.cache_resource
 def create_embeddings():
