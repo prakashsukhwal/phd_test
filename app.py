@@ -264,7 +264,6 @@ def app():
             memory = AgentTokenBufferMemory(memory_key=memory_key, llm=llm, chat_memory=msgs)
            
 
-            # @st.cache_resource
             def sys_prompt():
                 
                 c.execute("SELECT * FROM users WHERE username=?", (st.session_state['username'],))
@@ -322,7 +321,7 @@ def app():
                     extra_prompt_messages=[MessagesPlaceholder(variable_name=memory_key)])
 
 
-            @st.cache_resource
+            
             def llm_agent():
                 agent = OpenAIFunctionsAgent(llm=llm,
                                         tools=tools,
