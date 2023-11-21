@@ -79,7 +79,7 @@ def create_embeddings():
 
 
 # Create a connection to the database
-conn = sqlite3.connect('user.db')
+conn = sqlite3.connect('user2.db')
 c = conn.cursor()
 
 # Create a table to store user details
