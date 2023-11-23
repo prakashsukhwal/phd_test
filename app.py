@@ -355,7 +355,8 @@ def app():
                                         tools=tools, 
                                         memory=memory, 
                                         verbose=False,
-                                        return_intermediate_steps=True)
+                                        return_intermediate_steps=True,
+                                          handle_parsing_errors=True)
             c.execute("SELECT * FROM users WHERE username=?", (st.session_state['username'],))
             user = c.fetchone()
             # Re-setting session state 
