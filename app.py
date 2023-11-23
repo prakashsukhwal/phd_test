@@ -175,8 +175,8 @@ def app():
     if choice == 'Home':
         # st.write('Welcome to the User Registration and Login App!')
         st.markdown("""
-        This website is an experimental platform capable of personalized responses regarding chronic diseases. It does not intend to replace a real medical practitioner.
-        To begin using, please follow the steps below:
+        This website is an experimental platform capable of personalized responses regarding chronic diseases. It does not intend to replace a real medical practitioner.:full_moon_with_face:
+        - To begin using, please follow the steps below:
         """)
         
         st.subheader("Registration Process:")
