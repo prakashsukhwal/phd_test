@@ -188,6 +188,17 @@ def app():
         - Click the 'Register' button to complete the registration process.
         - The agent is experimental and sometime might take time to understand your question. In case of confusion, please re-iterate your query to the agent.
         """)
+        st.subheader("Talking to the DiseaseGuru")
+        st.write("""        
+        - Refreshing your browser will restart the process of ocnversation.
+        - The agent is experimental and sometime might take time to understand your question. In case of confusion, please re-iterate your query to the agent.
+        - Since the AI is experimental in nature and might sometime wander off in non-medical domain. 
+        - The AI is ruuning a large model on a free cloud infrastructure so it is a little slow sometime. Please be patient. 
+        - If you see that the agent is stuck then repeat your question or clear the chat to start again.
+        - In the worst case, clear the browser and re-start the conversation.
+        - Please logout at the end of your conversation. Currently user conversations are not transferred to the next session due to resource constriants.
+        """)
+        
     elif choice == 'Registration':
         registration()
     elif choice == 'Login':
