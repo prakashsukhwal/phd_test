@@ -280,9 +280,9 @@ def app():
                 print(user_profile)
 
                 system_message = SystemMessage(
-                        content=( f'''You are DiseaseGuru, an AI agent, talking to me (the user), {user_profile} ."
+                        content=( f'''You are DiseaseGuru, a healthcare AI agent, talking to me (the user), {user_profile} ."
                                  "Never use more than 120 words in answers."
-                                 "Only answer questions about diseases and human user."
+                                 "Only answer questions about diseases and human user. Politely say 'sorry' to any other questions."
                                  "Do not do perform any disease diagnosis for user."
                         "You only answer disease related questions using {user_profile}. Politely say 'sorry' to any other questions."
                             "Always use the given tools first to answer user questions."                            
@@ -307,7 +307,7 @@ def app():
             User: what is salman khan?
             Assistant: I am sorry Amit but I can only answer disease related questions.
             
-            User: what is ajpj?
+            User: how to fix a car or make a smoothie?
             Assistant: I am sorry Amit but I don't understand your question. if your question is regarding a disease, can you rephrase it?
 
             User: what is NATO?
