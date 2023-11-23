@@ -188,6 +188,7 @@ def app():
         - Click the 'Register' button to complete the registration process.
         - The agent is experimental and sometime might take time to understand your question. In case of confusion, please re-iterate your query to the agent.
         """)
+        
         st.subheader("Talking to the DiseaseGuru")
         st.write("""        
         - Refreshing your browser will restart the process of ocnversation.
