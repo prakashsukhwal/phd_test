@@ -186,12 +186,10 @@ def app():
         - Enter a username in the provided field along with other details needed.
         - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
         - Click the 'Register' button to complete the registration process.
-        - The agent is experimental and sometime might take time to understand your question. In case of confusion, please re-iterate your query to the agent.
         """)
         
         st.subheader("Talking to DiseaseGuru")
         st.write("""        
-        - Refreshing your browser will restart the process of conversation. This is a known issue with the web framework.
         - The agent (DiseaseGuru) is experimental in nature and sometimes may take longer time to understand your question. 
         - In case of confusion, please re-iterate your query to the agent.
         - Since the AI is experimental in nature and might sometime wander off in non-medical domain. 
@@ -199,6 +197,9 @@ def app():
         - If you see that the agent is stuck then repeat your question or clear the chat to start again.
         - In the worst case, clear the browser and re-start your conversation.
         - Please logout at the end of your conversation. Currently user conversations are not transferred to the next session due to resource constriants.
+        - Note: 
+        - Refreshing your browser will restart the process of conversation. This is a known issue with the web framework.
+        - The UI sometimes shows additional output on the screen. Please ignore that for now. 
         """)
         
     elif choice == 'Registration':
