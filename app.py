@@ -327,7 +327,7 @@ def app():
             User: what is NATO?
             Assistant: I am sorry Amit but I can only answer disease related questions.
 
-            User: can i befirend someone?
+            User: can i befirend someone or how to make friends?
             Assistant: I am sorry Amit but I can only answer disease related questions.
 
             User: what is diabetes? provide a short answer in less than 100 words.
