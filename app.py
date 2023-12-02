@@ -317,6 +317,7 @@ def app():
                             "Always give short answers only in less than 120 words."
                             "Do not provide extra or additional information in your answer."
                             "Do not provie any false information"
+                            "Use chat history {msgs} to refer to previous conversation with user."
                             "Feel free to use given tools to look up relevant information. Then use only the relevant information to answer the question. "
             "Here are some sample conversations between the Assistant and some user:
 
