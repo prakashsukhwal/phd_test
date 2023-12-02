@@ -188,7 +188,25 @@ def app():
         - Click the 'Register' button to complete the registration process.
         """)
         
-        st.subheader("Talking to DiseaseGuru")
+        # st.subheader("Talking to DiseaseGuru")
+        # st.write("""        
+        # - The agent (DiseaseGuru) is experimental in nature and sometimes may take longer time to understand your question. 
+        # - In case of confusion, please re-iterate your query to the agent.
+        # - Since the AI is experimental in nature and might sometime wander off in non-medical domain. 
+        # - The AI is ruuning a large model on a free cloud infrastructure so it is a little slow sometimes. Please be patient. :full_moon_with_face:
+        # - If you see that the agent is stuck then repeat your question or clear the chat to start again.
+        # - In the worst case, clear the browser and re-start your conversation.
+        # - Please logout at the end of your conversation. Currently user conversations are not transferred to the next session due to resource constriants.
+        # - **Note**: 
+        # - Refreshing your browser will restart the process of conversation. This is a known issue with the web framework.
+        # - The UI sometimes shows additional output on the screen. Please ignore that for now. 
+        # """)
+        
+    elif choice == 'Registration':
+        registration()
+    elif choice == 'Login':
+        login()
+         st.subheader("Talking to DiseaseGuru")
         st.write("""        
         - The agent (DiseaseGuru) is experimental in nature and sometimes may take longer time to understand your question. 
         - In case of confusion, please re-iterate your query to the agent.
@@ -197,15 +215,10 @@ def app():
         - If you see that the agent is stuck then repeat your question or clear the chat to start again.
         - In the worst case, clear the browser and re-start your conversation.
         - Please logout at the end of your conversation. Currently user conversations are not transferred to the next session due to resource constriants.
-        - Note: 
+        - **Note**: 
         - Refreshing your browser will restart the process of conversation. This is a known issue with the web framework.
         - The UI sometimes shows additional output on the screen. Please ignore that for now. 
         """)
-        
-    elif choice == 'Registration':
-        registration()
-    elif choice == 'Login':
-        login()
     elif choice == 'User Details':
         if st.session_state['username'] is not None:
             user_details()
