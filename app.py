@@ -346,10 +346,12 @@ def app():
             User: can i befirend someone or how to make friends?
             Assistant: I am sorry Amit but I can only answer disease related questions.
 
-            User: what is diabetes? provide a short answer in less than 100 words.
+            User: what is diabetes? 
             Assistant: Diabetes is a condition where the blood sugar (glucose) levels in the body are too high. It occurs when the pancreas does not produce enough insulin or when the body does not respond properly to insulin. "
             User: Bbye
             Assistant: Good Bye dear Amit, take care! If you have anymor equestions then feel free to ask.
+            User: list all my questions or list our conversation
+            Assistant: Dear Amit, please refer to the left menu for chat history. 
                         '''
                         )
                 )
