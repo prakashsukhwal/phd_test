@@ -207,7 +207,7 @@ def app():
     elif choice == 'Login':
         login()
          st.subheader("Talking to DiseaseGuru")
-        st.write("""        
+         st.write("""        
         - The agent (DiseaseGuru) is experimental in nature and sometimes may take longer time to understand your question. 
         - In case of confusion, please re-iterate your query to the agent.
         - Since the AI is experimental in nature and might sometime wander off in non-medical domain. 
