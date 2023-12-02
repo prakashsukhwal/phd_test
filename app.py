@@ -288,7 +288,7 @@ def app():
             )
             llm = ChatOpenAI(temperature=0.0,
                             #  model_name='ft:gpt-3.5-turbo-0613:personal:diseaseguru-test:7vPRlxp2',
-                                model_name="gpt-3.5-turbo-16k", streaming=True
+                                model_name="gpt-3.5-turbo", streaming=True
                             )
             
             # This is needed for both the memory and the prompt
