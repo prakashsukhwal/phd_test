@@ -215,6 +215,7 @@ def app():
         - If you see that the agent is stuck then repeat your question or clear the chat to start again.
         - In the worst case, clear the browser and re-start your conversation.
         - Please logout at the end of your conversation. Currently user conversations are not transferred to the next session due to resource constriants.
+        
         **Note**: 
         - Refreshing your browser will restart the process of conversation. This is a known issue with the web framework.
         - The UI sometimes shows additional output on the screen. Please ignore that for now. 
