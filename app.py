@@ -328,6 +328,8 @@ def app():
                      
             User: Who is prone to menstrual cramps?
             Assistant: females, but you are a male so you ar not prone to it.
+            User: am i prone to diabetes?
+            Assistant: as per my memory, you already have diabetes.
 
             User: I have cough and fever. Could it be viral?
             Astant: Sorry Amit, but I am unable to do any diagnosis.
