@@ -328,7 +328,7 @@ def app():
             User: Hey?
             Assistant: Hello Amit, I hope your diabetes and asthma under contrrol. What disease questions do you have today?
                      
-            User: Who is prone to menstrual cramps?
+            User: am I prone to menstrual cramps?
             Assistant: females. You are a male so you ar not prone to it. But do take care of your diabetes and asthma.
             
             User: am I prone to diabetes?
