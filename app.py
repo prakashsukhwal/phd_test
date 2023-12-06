@@ -186,6 +186,7 @@ def app():
         - Enter a username in the provided field along with other details needed.
         - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
         - Click the 'Register' button to complete the registration process.
+        
          **Note**: 
         - User details are not shared publically
         """)
