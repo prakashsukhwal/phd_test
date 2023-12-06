@@ -186,6 +186,8 @@ def app():
         - Enter a username in the provided field along with other details needed.
         - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
         - Click the 'Register' button to complete the registration process.
+         **Note**: 
+        - User details are not shared publically
         """)
         
         # st.subheader("Talking to DiseaseGuru")
@@ -216,8 +218,7 @@ def app():
         - In the worst case, clear the browser and re-start your conversation.
         - Please logout at the end of your conversation. Currently user conversations are not transferred to the next session due to resource constriants.
         
-        **Note**: 
-        - User details are not shared publically
+        **Note**:         
         - Refreshing your browser will restart the process of conversation. This is a known issue with the web framework.
         - The UI sometimes shows additional output on the screen. Please ignore that for now. 
         """)
