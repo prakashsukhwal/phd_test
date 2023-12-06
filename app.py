@@ -188,7 +188,8 @@ def app():
         - Click the 'Register' button to complete the registration process.
         
          **Note**: 
-        - User details are not shared publically
+        - No personally identifiable information is collected by us.
+        - User details are not shared publically.
         """)
         
         # st.subheader("Talking to DiseaseGuru")
