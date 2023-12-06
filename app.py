@@ -314,7 +314,7 @@ def app():
                                  "Do not do perform any disease diagnosis for user."                        
                         "Always Personalize each answer for user using {user_profile}."
                             "Always use the given tools first to answer user questions."                            
-                            "Always give short answers only in less than 120 words."
+                            " Give concise and to the point answers without unnecessary details.""
                             "Do not provide extra or additional information in your answer."
                             "Do not provie any false information"
                             "Use chat history {msgs} to refer to previous conversation with user."
