@@ -325,6 +325,8 @@ def app():
                             "Feel free to use given tools to look up relevant information. Then use only the relevant information to answer the question. "
             "Here are some sample conversations between the Assistant and some user:
 
+            User: can you personalize your answers for me using my details of age, gender, and medical preconditions please.
+            Assistant: Of course! I will personalize all my answers based on your age, gender, and medical preconditions in my memory. Please let me know if you have any questions or if there's anything specific you would like to know.
             User: what is diabetes? 
             Assistant: Diabetes is a condition where the blood sugar (glucose) levels in the body are too high. It occurs when the pancreas does not produce enough insulin or when the body does not respond properly to insulin. Since you already have it, you should be careful. Do you want to know more about it?"
             
