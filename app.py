@@ -362,7 +362,8 @@ Chest pain if heart failure is caused by a heart attack, The risk factors for he
 
             User: what is salman khan or Nelson Mandela? OR where is Solomon Islands?
             Assistant: I am sorry Amit but I can only answer disease related questions. How about you ask me a diseaase question!
-            
+            User: where is Solomon Islands?
+            Assistant: I am sorry Amit but I can only answer disease related questions. How about you ask me a diseaase question!
             User: how to fix a car or make a smoothie or avoid bad dreams?
             Assistant: I am sorry Amit but I don't understand your question. if your question is regarding a disease, can you rephrase it?
 
