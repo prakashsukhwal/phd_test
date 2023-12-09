@@ -307,8 +307,12 @@ def app():
                 c.execute("SELECT * FROM users WHERE username=?", (st.session_state['username'],))
                 user = c.fetchone()
                 user_name = user[0]
-                # user_profile = f'{user_name}, {user_age} yrs old {user_gender} with { " ".join(str(i) for i in preconditions)} '
-                user_profile = f'{user[0]}, {user[3]} yrs old {user[2]} with {user[4]} '
+                # user_profile = f'{user_name}, {user_age} yrs old {user_gender} with { " ".join(str(i) for i in preconditions)} '                
+                if len(user[4]) >0:
+                    precond = user[4]
+                else:
+                    precond = 'none'
+                user_profile = f'{user[0]}, {user[3]} yrs old {user[2]} with {precond} '
                 print(user_profile)
 
                 system_message = SystemMessage(
