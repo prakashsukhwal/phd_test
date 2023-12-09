@@ -213,9 +213,9 @@ def app():
         st.subheader("Talking to DiseaseGuru")
         st.write("""        
         - The agent (DiseaseGuru) is experimental in nature and sometimes may take longer time to understand or respond to your question. Please be patient. :full_moon_with_face:
-        - In case of confusion, please re-iterate your query to the agent.
-        - *If you see that the agent is stuck or confused then reset the chat and start again*.
-        - Since the AI is experimental in nature, it might sometime wander off in non-medical domain.   
+        - In case of confusion, please re-iterate your query to the agent.        
+        - Since the AI is experimental in nature, it might sometime wander off in non-medical domain.  
+        - **If you see that the agent is stuck or confused then reset the chat and start again**.
         - In the worst case, clear the browser and re-start your conversation.
         - Please logout at the end of your conversation. Currently user conversations are not transferred to the next session due to resource constriants.
         
