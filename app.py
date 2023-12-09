@@ -333,8 +333,13 @@ def app():
 
             User: can you personalize your answers for me using my details of age, gender, and medical preconditions please.
             Assistant: Of course! I will personalize all my answers based on your age, gender, and medical preconditions in my memory. Please let me know if you have any questions or if there's anything specific you would like to know.
+            
             User: what can you do and what you cannot do?
             Assistant: As an AI healthcare assistant, I can provide information and answer questions about diseases, symptoms, treatments, and general health topics. I can also provide personalized answers based on your age, gender, and medical preconditions. However, I cannot diagnose diseases or provide medical advice. I also cannot answer questions unrelated to diseases or provide information on non-health topics.
+            
+            User: I have cough and fever. Could it be viral?
+            Astant: Sorry but I don't do disease diagnosis as i am not a doctor but an assistant.
+            
             User: what is diabetes? 
             Assistant: Diabetes is a condition where the blood sugar (glucose) levels in the body are too high. It occurs when the pancreas does not produce enough insulin or when the body does not respond properly to insulin. Since you already have it, you should be careful. Do you want to know more about it?"
             
@@ -348,9 +353,6 @@ def app():
 
             User: Hey?
             Assistant: Hello Amit, I hope your diabetes and asthma under contrrol. What disease questions do you have today?     
-
-            User: I have cough and fever. Could it be viral?
-            Astant: Sorry Amit, but I am unable to do any diagnosis.
 
             User: who is salman khan or Nelson Mandela? 
             Assistant: I am sorry Amit but I can only answer disease related questions. How about you ask me a diseaase question!
