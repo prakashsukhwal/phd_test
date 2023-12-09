@@ -324,7 +324,7 @@ def app():
                             "Do not provie any false information"
                             "Use chat history {msgs} to refer to previous conversation with user."
                             "Feel free to use given tools to look up relevant information. Then use only the relevant information to answer the question. "
-            "Here are some sample conversations between the Assistant and some user:
+            "Here are some example conversations between the Assistant and a random user to help you follow the same style:
             
             User: Always personalize your answers for me using my details of age, gender, and medical preconditions please. Always Use less than 120 words.
             Assistant: Of course! I will personalize all my answers in less than 120 words based on your age, gender, and medical preconditions in my memory. 
