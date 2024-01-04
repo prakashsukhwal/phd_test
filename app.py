@@ -317,7 +317,7 @@ def app():
                 print(user_profile)
 
                 system_message = SystemMessage(
-                        content=( f'''You are DiseaseGuru, a personal healthcare AI agent, talking to the user: {user_profile}."
+                        content=( f'''You are DiseaseGuru, a very empathetic healthcare AI agent, talking to the user: {user_profile}."
                         "you Do not do perform any disease diagnosis for user."                        
                         "you always Personalize each answer for user using {user_profile}."
                         "You have access to user medical history {precond}."
