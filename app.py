@@ -104,7 +104,7 @@ def registration():
     password = st.text_input('Password', type='password')
     gender = st.selectbox('Gender', ['Male', 'Female'])
     age = st.selectbox('Age', range(20, 101))
-    health_conditions = st.multiselect('Existing Health Conditions', ['Diabetes', 'Hypertension', 'Asthma', 'cognitive impairment', 'high cholesterol'])
+    health_conditions = st.multiselect('Existing Health Conditions', ['Diabetes', 'Hypertension', 'Asthma', 'cognitive impairment', 'high cholesterol', 'None'])
     profile_picture = st.file_uploader('Upload Profile Picture', type=['jpg', 'jpeg', 'png'])
     if st.button('Register'):
         # Check if user already exists
@@ -181,17 +181,21 @@ def app():
         - To begin using, please follow the steps below:
         """)
         
-        st.subheader("Registration Process:")
+        st.subheader("Registration Instructions:")
         st.write("""
         Please complete the registration process to access the conversational agent. Follow these steps:
         - Go to the menu on the left and select 'Registration'
-        - Enter a username in the provided field along with other details needed.
+        - Enter a username of choice in the provided field along with other details needed. 
+        - Select the applicable 'Existing Health Conditions'.
         - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
-        - Click the 'Register' button to complete the registration process.
+        - *Click the 'Register' button* to complete the registration process.
+        - Proceed to 'Login' page in the drop down.
+        - Oncce login is done, go to 'User Details' page for accessing the virtual assitant. 
         
          **Note**: 
         - No personally identifiable information is collected by us.
-        - User details are not shared publically.
+        - registered details are only used by the AI agent to customise the responses.
+        - No User details are shared publically.
         """)
         
         # st.subheader("Talking to DiseaseGuru")
