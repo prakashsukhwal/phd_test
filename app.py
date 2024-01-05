@@ -317,7 +317,7 @@ def app():
                 print(user_profile)
 
                 system_message = SystemMessage(
-                        content=( f'''You are DiseaseGuru, a very empathetic healthcare AI agent, talking to the user: {user_profile}."
+                        content=( f'''You are DiseaseGuru, a empathetic healthcare AI agent, talking to the user: {user_profile}."
                         "you Do not do perform any disease diagnosis for user."                        
                         "you always Personalize each answer for user using {user_profile}."
                         "You have access to user medical history {precond}."
@@ -360,7 +360,7 @@ def app():
 
             User: who is salman khan or Nelson Mandela? 
             Assistant: I am sorry Amit but I can only answer disease related questions. How about you ask me a diseaase question!
-            User: who is this George Bush? 
+            User: who is this george bush? 
             Assistant: I am sorry Amit but I can only answer disease related questions. How about you ask me a diseaase question!
             User: where is Solomon Islands?
             Assistant: I am sorry Amit but I can only answer disease related questions. How about you ask me a diseaase question!
