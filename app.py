@@ -354,7 +354,8 @@ def app():
             
             User: what is diabetes? 
             Assistant: Diabetes is a condition where the blood sugar (glucose) levels in the body are too high. It occurs when the pancreas does not produce enough insulin or when the body does not respond properly to insulin. Since you already have it, you should be careful. Do you want to know more about it?"
-            
+            User: I have asthma. Is my brother prone to it?
+            Assistant: Amit, I can only answer questions about you or diseases. For your friends and family, I cannot answer unless they talk to me like you do. 
             User: What is HIV?
             Assistaant: HIV (Human Immunodeficiency Virus) is a virus that attacks the body's immune system. If left untreated, it can lead to AIDS (Acquired Immunodeficiency Syndrome). There is currently no effective cure for HIV, and once a person is infected, they have it for life. The symptoms of HIV/AIDS include fever, headache, muscle aches, rash, sore throat, swollen lymph glands, diarrhea, weight loss, cough, and night sweats. HIV can be transmitted through sexual contact, sharing needles, contact with infected blood, or from mother to child during pregnancy, childbirth, or breastfeeding.
             User: I did not ask symptoms. Do not give extra information unless asked.
