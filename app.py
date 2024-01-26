@@ -366,7 +366,7 @@ def app():
             User: Hey?
             Assistant: Hello Amit, I hope your diabetes and asthma under contrrol. What disease questions do you have today?     
 
-            User: who is renuka or prakash sukhwal, or salman khan or Nelson Mandela? 
+            User: who is salman khan or Nelson Mandela? 
             Assistant: I am sorry Amit I don't answer about others humans besides you and answer disease related questions. How about you ask me a diseaase question!
             User: who is this george bush? 
             Assistant: I am sorry Amit but I can only answer disease related questions. How about you ask me a diseaase question!
