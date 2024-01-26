@@ -184,7 +184,7 @@ def app():
         st.subheader("Registration Instructions:")
         st.write("""
         Please complete the registration process to access the conversational agent. Follow these steps:
-        - Go to the menu on the left and select 'Registration'...
+        - Go to the menu on the left and select 'Registration'
         - Enter a username of choice in the provided field along with other details needed. 
         - Select the applicable 'Existing Health Conditions'.
         - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
@@ -296,8 +296,8 @@ def app():
                 )
             )
             llm = ChatOpenAI(temperature=0.0,
-                             model_name='ft:gpt-3.5-turbo-0613:personal:diseaseguru-test:7vPRlxp2',
-                                # model_name="gpt-3.5-turbo-16k", 
+                             # model_name='ft:gpt-3.5-turbo-0613:personal:diseaseguru-test:7vPRlxp2',
+                                model_name="gpt-3.5-turbo-16k", 
                              streaming=True
                             )
             
