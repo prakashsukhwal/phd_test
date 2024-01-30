@@ -189,7 +189,7 @@ def app():
         - :green[Go to the menu on the left] and select 'Registration'
         - Enter a username of choice in the provided field along with other details needed. 
         - Select the applicable 'Existing Health Conditions'.
-        - Upload an icon or image as your profile picture. (This can be any random icon; no real picture needed.)
+        - :red[Upload any image as your profile picture.] (no real picture needed.)
         - *Click the 'Register' button* to complete the registration process.
         - Proceed to 'Login' page in the drop down.
         - Oncce login is done, go to 'User Details' page for accessing the virtual assitant. 
