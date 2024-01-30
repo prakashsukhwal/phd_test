@@ -178,7 +178,8 @@ def app():
         Greetings from DiseaseGuru. :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:
         
         This website is an experimental research platform capable of personalized responses regarding chronic diseases. It does not intend to replace a real medical practitioner.:full_moon_with_face:
-        :orange[Also, it is slow due to running on free server]
+        
+        :orange[Also, it is slow due to running on free server. We request your patience while asking questions.]
         - To begin using, please follow the steps below:
         """)
         
