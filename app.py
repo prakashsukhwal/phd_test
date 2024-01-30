@@ -191,8 +191,8 @@ def app():
         - Select the applicable 'Existing Health Conditions'.
         - :red[Upload any image as your profile picture.] (no real picture needed.)
         - :orange[*Click the 'Register' button* to complete] the registration process.
-        - :red[After registration,] :green[proceed to 'Login' page using the left menu/drop down.]
-        - Oncce login is done, go to 'User Details' page for accessing the virtual assitant. 
+        - :orange[After Registration,] :green[proceed to 'Login' page using the left menu/drop down.]
+        - :orange[After Login,] :green[go to 'User Details' page to chat] with the virtual assitant. 
         
          **Note**: 
         - No personally identifiable information is collected by us.
