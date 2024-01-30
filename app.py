@@ -177,7 +177,8 @@ def app():
         st.markdown("""
         Greetings from DiseaseGuru. :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:
         
-        This website is an experimental platform capable of personalized responses regarding chronic diseases. It does not intend to replace a real medical practitioner.:full_moon_with_face:
+        This website is an experimental research platform capable of personalized responses regarding chronic diseases. It does not intend to replace a real medical practitioner.:full_moon_with_face:
+        :yellow [Also, it is slow due to running on free server]
         - To begin using, please follow the steps below:
         """)
         
