@@ -190,7 +190,7 @@ def app():
         - Enter a username of choice in the provided field along with other details needed. 
         - Select the applicable 'Existing Health Conditions'.
         - :red[Upload any image as your profile picture.] (no real picture needed.)
-        - :orange[*Click the 'Register' button* to complete the registration] process.
+        - :orange[*Click the 'Register' button* to complete] the registration process.
         - :orange[After registration, proceed to 'Login' page using the left menu/drop down.]
         - Oncce login is done, go to 'User Details' page for accessing the virtual assitant. 
         
